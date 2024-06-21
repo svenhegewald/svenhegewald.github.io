@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://eup.ethz.ch/people/sven-hegewald.html'>ETH Zurich</a>. 
+subtitle: <a href='https://eup.ethz.ch/people/sven-hegewald.html'>ETH Zurich</a> 
 
 profile:
   align: right
