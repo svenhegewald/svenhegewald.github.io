@@ -2,17 +2,14 @@
 layout: page
 permalink: /publications/
 title: publications
-description: 
+description: Peer-reviewed Journal Articles 
 nav: true
-nav_order: 1
+nav_order: 2
 ---
+
 <!-- _pages/publications.md -->
 <div class="publications">
-Peer-reviewed Journal Articles
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}} && status=published] %}
-{% endfor %}
+{% bibliography %}
 
 </div>
