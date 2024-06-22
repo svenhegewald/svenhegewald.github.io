@@ -10,9 +10,9 @@ nav_order: 2
 <!-- _pages/publications.md -->
 <div class="publications">
 <h2>peer-reviewed journal articles</h2>
-{% for y in page.paper_years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+  {% bibliography -f papers -q %}
+
+<h2>policy papers</h2>
+  {% bibliography -f policypapers -q %}
 
 </div>
