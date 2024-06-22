@@ -2,7 +2,7 @@
 layout: page
 permalink: /wps/
 title: working papers
-description: Below you can get access to all my working papers. 
+description: 
 nav: true
 nav_order: 5
 ---
