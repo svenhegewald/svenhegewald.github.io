@@ -10,7 +10,7 @@ nav_order: 5
 <!-- _pages/publications.md -->
 <div class="publications">
 
-{% bibliography -f papers %}
+{% bibliography -f wp %}
 
 </div>
 
