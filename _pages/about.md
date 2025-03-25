@@ -11,10 +11,10 @@ profile:
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD candidate in political science at ETH Zurich. In my research, I draw on insights from social psychology and geography to study territorial divisions in political behaviour. Specifically, my dissertation investigates how place-based identities shape political conflict along the urban-rural divide in Europe. My work has been published in the *European Journal of Political Research*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
+I am a Postdoctoral Researcher in political science at ETH Zurich. My research draws on insights from social psychology, sociology, and geography to examine territorial divides in European politics. I focus in particular on the growing urban-rural divide in political behaviour and the crisis of trust in places left-behind. My work has been published in the *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
 
 # Education
-9/2020--  Ph.D., Political Science (ETH Zurich)
+9/2020--7/2024  Ph.D., Political Science (ETH Zurich)
 
 1/2023--7/2023  Visiting Research Student (University of Oxford)
 
