@@ -18,7 +18,7 @@ In my research, I draw on insights from social psychology, sociology, and geogra
 
 My work has been published in the *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
 
-# Education
+**Education**
 9/2020--7/2024  Ph.D., Political Science (ETH Zurich)
 
 1/2023--7/2023  Visiting Research Student (University of Oxford)
