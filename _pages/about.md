@@ -12,7 +12,7 @@ social: true # includes social icons at the bottom of the page
 ---
 Welcome to my website.
 
-I am a Postdoctoral Researcher in political science at ETH Zurich. 
+I am a postdoctoral researcher in political science at ETH Zurich. 
 
 My research draws on insights from social psychology, sociology, and geography to examine territorial divides in European politics. I focus in particular on the growing urban-rural divide in political behavior, and the crisis of trust in places left-behind. 
 
