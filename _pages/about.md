@@ -13,7 +13,7 @@ social: true # includes social icons at the bottom of the page
 
 **Welcome to my website.**
 
-I am a postdoctoral researcher in the ERC-funded <a href="https://cordis.europa.eu/project/id/101162864/de">RESPOL </a> project at TU Chemnitz, led by <a href="https://aleininger.eu">Arndt Leininger </a>. Prior to this, I was a postdoctoral researcher with the href="https://eup.ethz.ch/">European Politics Research Group </a> at ETH Zurich, where I also completed my PhD.
+I am a postdoctoral researcher in the ERC-funded <a href="https://cordis.europa.eu/project/id/101162864/de">RESPOL </a> project at TU Chemnitz, led by <a href="https://aleininger.eu">Arndt Leininger </a>. Prior to this, I was a postdoctoral researcher with the <a href="https://eup.ethz.ch/">European Politics Research Group </a> at ETH Zurich, where I also completed my PhD.
 
 In my research, I draw on insights from social psychology, geography, and political science to study territorial divisions in European politics. I focus in particular on the urban–rural divide in political behavior and the crisis of trust in places left behind.
 
