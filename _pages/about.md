@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: <a href="https://www.tu-chemnitz.de/phil/politik/pf/professur/professur.php.en">TU Chemnitz</a>
 
 profile:
