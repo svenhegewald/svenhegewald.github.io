@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://www.tu-chemnitz.de/phil/politik/pf/professur/professur.php.en">TU Chemnitz</a>
+subtitle: /
 
 profile:
   align: right
