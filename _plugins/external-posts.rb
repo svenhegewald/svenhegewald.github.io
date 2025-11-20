@@ -1,96 +1,68 @@
 require 'feedjira'
-require 'httparty'
-require 'jekyll'
-require 'nokogiri'
+require 'open-uri'
 require 'time'
 
-module ExternalPosts
-  class ExternalPostsGenerator < Jekyll::Generator
+module Jekyll
+  class ExternalPostsGenerator < Generator
     safe true
-    priority :high
+    priority :low
 
     def generate(site)
-      if site.config['external_sources'] != nil
-        site.config['external_sources'].each do |src|
-          puts "Fetching external posts from #{src['name']}:"
-          if src['rss_url']
-            fetch_from_rss(site, src)
-          elsif src['posts']
-            fetch_from_urls(site, src)
-          end
+      return unless site.config['external_sources']
+
+      site.config['external_sources'].each do |source|
+        if source['rss_url']
+          fetch_from_rss(site, source['rss_url'], source['name'])
+        elsif source['posts']
+          fetch_manual_posts(site, source['posts'], source['name'])
         end
       end
     end
 
-    def fetch_from_rss(site, src)
-      xml = HTTParty.get(src['rss_url']).body
-      return if xml.nil?
-      feed = Feedjira.parse(xml)
-      process_entries(site, src, feed.entries)
-    end
+    def fetch_from_rss(site, rss_url, source_name)
+      puts "Fetching external posts from #{source_name}:"
 
-    def process_entries(site, src, entries)
-      entries.each do |e|
-        puts "...fetching #{e.url}"
-        create_document(site, src['name'], e.url, {
-          title: e.title,
-          content: e.content,
-          summary: e.summary,
-          published: e.published
-        })
+      begin
+        xml = URI.open(rss_url, "User-Agent" => "JekyllRSSFetcher/1.0").read
+        feed = Feedjira.parse(xml)
+
+        if feed.respond_to?(:entries)
+          feed.entries.each do |entry|
+            site.posts.docs << ExternalPost.new(site, entry, source_name)
+          end
+        else
+          puts "⚠ No entries found or incompatible feed format from #{source_name}. Skipping."
+        end
+
+      rescue StandardError => e
+        puts "⚠ Skipping #{source_name}: #{e.class} - #{e.message}"
       end
     end
 
-    def create_document(site, source_name, url, content)
-      slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-      path = site.in_source_dir("_posts/#{slug}.md")
-      doc = Jekyll::Document.new(
-        path, { :site => site, :collection => site.collections['posts'] }
-      )
-      doc.data['external_source'] = source_name
-      doc.data['title'] = content[:title]
-      doc.data['feed_content'] = content[:content]
-      doc.data['description'] = content[:summary]
-      doc.data['date'] = content[:published]
-      doc.data['redirect'] = url
-      site.collections['posts'].docs << doc
-    end
-
-    def fetch_from_urls(site, src)
-      src['posts'].each do |post|
-        puts "...fetching #{post['url']}"
-        content = fetch_content_from_url(post['url'])
-        content[:published] = parse_published_date(post['published_date'])
-        create_document(site, src['name'], post['url'], content)
+    def fetch_manual_posts(site, posts, source_name)
+      posts.each do |post|
+        site.posts.docs << ExternalPost.new(site, post, source_name, manual: true)
       end
     end
+  end
 
-    def parse_published_date(published_date)
-      case published_date
-      when String
-        Time.parse(published_date).utc
-      when Date
-        published_date.to_time.utc
+  class ExternalPost < Document
+    def initialize(site, raw_data, source_name, manual: false)
+      super(site.in_source_dir('_news'), { "read" => false })
+
+      self.data['layout'] = 'post'
+      self.data['external'] = true
+      self.data['source_name'] = source_name
+
+      if manual
+        self.data['title'] = raw_data['title'] || "External Article"
+        self.data['url'] = raw_data['url']
+        self.data['date'] = Time.parse(raw_data['published_date'])
       else
-        raise "Invalid date format for #{published_date}"
+        self.data['title'] = raw_data.title
+        self.data['url'] = raw_data.url
+        self.data['date'] = raw_data.published || Time.now
       end
     end
-
-    def fetch_content_from_url(url)
-      html = HTTParty.get(url).body
-      parsed_html = Nokogiri::HTML(html)
-
-      title = parsed_html.at('head title')&.text || ''
-      description = parsed_html.at('head meta[name="description"]')&.attr('content') || ''
-      body_content = parsed_html.at('body')&.inner_html || ''
-
-      {
-        title: title,
-        content: body_content,
-        summary: description
-        # Note: The published date is now added in the fetch_from_urls method.
-      }
-    end
-
   end
 end
