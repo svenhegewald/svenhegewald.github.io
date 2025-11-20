@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://eup.ethz.ch/people/sven-hegewald.html'>ETH Zurich</a> 
+subtitle: <a href='[https://eup.ethz.ch/people/sven-hegewald.html](https://www.tu-chemnitz.de/phil/politik/pf/professur/mitarbeiter.php.en)'>TU Chemnitz</a> 
 
 profile:
   align: right
@@ -12,11 +12,11 @@ social: true # includes social icons at the bottom of the page
 ---
 **Welcome to my website.**
 
-I am a postdoctoral researcher in political science at ETH Zurich. 
+I am a postdoctoral researcher at TU Chemnitz in the ERC-funded project RESPOL led by Arndt Leininger. 
 
 In my research, I draw on insights from social psychology, geography, and political science to study territorial divisions in European politics. I focus in particular on the urban–rural divide in political behavior and the crisis of trust in places left behind.
 
-My work has been published in the *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
+My work has been published in the *Comparative Political Studies*, *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
 
 **Education**
 
