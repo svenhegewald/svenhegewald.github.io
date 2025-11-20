@@ -4,6 +4,7 @@ title: about
 permalink: /
 subtitle: <a href="https://www.tu-chemnitz.de/phil/politik/pf/professur/mitarbeiter.php.en">TU Chemnitz</a>
 
+
 profile:
   align: right
   image: prof_pic.jpg
