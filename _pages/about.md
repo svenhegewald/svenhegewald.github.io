@@ -17,7 +17,7 @@ I am a postdoctoral researcher in the ERC-funded project <a href="https://cordis
 
 In my research, I draw on insights from social psychology, geography, and political science to study territorial divisions in European politics. I focus in particular on the urban–rural divide in political behavior and the crisis of trust in places left behind.
 
-My work has been published in the *Comparative Political Studies*, *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
+My work has been published in *Comparative Political Studies*, the *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
 
 **Education**
 
