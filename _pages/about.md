@@ -12,7 +12,7 @@ social: true # includes social icons at the bottom of the page
 ---
 **Welcome to my website.**
 
-I am a postdoctoral researcher at TU Chemnitz in the ERC-funded project RESPOL led by Arndt Leininger. 
+I am a postdoctoral researcher in the ERC-funded project RESPOL at TU Chemnitz, led by Arndt Leininger.
 
 In my research, I draw on insights from social psychology, geography, and political science to study territorial divisions in European politics. I focus in particular on the urban–rural divide in political behavior and the crisis of trust in places left behind.
 
