@@ -15,9 +15,9 @@ social: true # includes social icons at the bottom of the page
 
 I am a postdoctoral researcher in the ERC-funded <a href="https://cordis.europa.eu/project/id/101162864/de">RESPOL </a> project at the University of Hamburg, led by <a href="https://aleininger.eu">Arndt Leininger </a>. Prior to this, I was a postdoctoral researcher with the <a href="https://eup.ethz.ch/">European Politics Research Group </a> at ETH Zurich, where I also completed my PhD.
 
-In my research, I draw on insights from social psychology, geography, and political science to study territorial divisions in European politics. I focus in particular on the urban–rural divide in political behavior and the crisis of trust in places left behind.
+In my research, I draw on insights from social psychology, geography, and political science to study territorial divisions in European politics. I focus in particular on the urban–rural divide in political behavior, the crisis of trust in left-behind places, and the political consequences of residential mobility.
 
-My work has been published in *Comparative Political Studies*, the *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, and the *Journal of European Public Policy*. 
+My work has been published in *Comparative Political Studies*, the *European Journal of Political Research*, the *European Political Science Review*, *European Union Politics*, the *Journal of Elections, Public Opinion and Parties*, the *Journal of European Public Policy*, and *Political Behavior*. 
 
 **Education**
 
