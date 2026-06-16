@@ -13,9 +13,4 @@ nav_order: 5
 
 {% bibliography -f wp %}
 
-<div class="publications">
-<h2>work in progress</h2>
 
-{% bibliography -f wip %}
-
-</div>
