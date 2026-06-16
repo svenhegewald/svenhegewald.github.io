@@ -8,6 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular 
+  more_info: <p>University of Hamburg</p> <p>Allende-Platz 1</p> <p>20146 Hamburg, Germany</p>
 social: true # includes social icons at the bottom of the page
 ---
 
